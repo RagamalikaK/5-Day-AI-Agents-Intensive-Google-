@@ -64,3 +64,20 @@ Runner = The assistant managing the conversation 🤖
 Let's build our first stateful agent, that can remember and have constructive conversations.
 
 ADK offers different types of sessions suitable for different needs. As a start, we'll start with a simple Session Management option (InMemorySessionService):
+
+
+
+Section 3: Persistent Sessions with DatabaseSessionService¶
+While InMemorySessionService is great for prototyping, real-world applications need conversations to survive restarts, crashes, and deployments. Let's level up to persistent storage!
+
+3.1 Choosing the Right SessionService
+ADK provides different SessionService implementations for different needs:
+
+Service	Use Case	Persistence	Best For
+InMemorySessionService	Development & Testing	❌ Lost on restart	Quick prototypes
+DatabaseSessionService	Self-managed apps	✅ Survives restarts	Small to medium apps
+Agent Engine Sessions	Production on GCP	✅ Fully managed	Enterprise scale
+3.2 Implementing Persistent Sessions
+Let's upgrade to DatabaseSessionService using SQLite. This gives us persistence without needing a separate database server for this demo.
+
+Let's create a chatbot_agent capable of having a conversation with the user.
