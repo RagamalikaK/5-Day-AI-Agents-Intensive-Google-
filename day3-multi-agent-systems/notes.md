@@ -81,3 +81,26 @@ Agent Engine Sessions	Production on GCP	✅ Fully managed	Enterprise scale
 Let's upgrade to DatabaseSessionService using SQLite. This gives us persistence without needing a separate database server for this demo.
 
 Let's create a chatbot_agent capable of having a conversation with the user.
+
+
+
+
+
+
+Next Steps - Long Term Memory Systems (Part 2)
+Why do we need memory?
+In this notebook, we manually identified a couple characteristic (username and country) and built tools to manage it. But real conversations involve hundreds of such characteristics:
+
+User preferences and habits
+Past interactions and their outcomes
+Domain knowledge and expertise levels
+Communication styles and patterns
+Contextual relationships between topics
+The Memory System in ADK automates this entire process, making it a valuable asset for building truly Context-Aware Agents that can accommodate any user's current and future needs.
+
+In the next notebook (Part 2: Memory Management), you'll learn how to:
+
+Enable automatic memory extraction from conversations
+Build agents that learn and adapt over time
+Create truly personalized experiences at scale
+Manage long-term knowledge across sessions
